@@ -1,0 +1,14 @@
+<section class="members">
+    <h4 class="heading">Our <span>members</span></h4>
+    <div class="box-container">
+        <% members.forEach(member => { %>
+            <div class="box">
+                <img src="<%= member.img %>" alt="Member image">
+                <div class="content">
+                    <h5><%= member.name %></h5>
+                    <p><%= member.job %></p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</section>
